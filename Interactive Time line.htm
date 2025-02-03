@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Timeline</title>
+    <link rel="stylesheet" href="/home/priynka/Interactive.css">
+</head>
+<body>
+    <div class="timeline-container">
+        <div class="timeline">
+            <div class="timeline-item" data-year="2025">
+                <div class="timeline-content">
+                    <h3>2025</h3>
+                    <p>Event in 2025: New era of technology!</p>
+                    <button onclick="showEventDetails('2025')">Show More</button>
+                </div>
+            </div>
+            <div class="timeline-item" data-year="2020">
+                <div class="timeline-content">
+                    <h3>2020</h3>
+                    <p>Event in 2020: Global changes.</p>
+                    <button onclick="showEventDetails('2020')">Show More</button>
+                </div>
+            </div>
+            <div class="timeline-item" data-year="2015">
+                <div class="timeline-content">
+                    <h3>2015</h3>
+                    <p>Event in 2015: A significant milestone!</p>
+                    <button onclick="showEventDetails('2015')">Show More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="event-details" class="event-details">
+        <h2>Event Details</h2>
+        <p id="event-text"></p>
+        <button onclick="closeDetails()">Close</button>
+    </div>
+
+    <script src="/home/priynka/Interactive.js"></script>
+</body>
+</html>
+
